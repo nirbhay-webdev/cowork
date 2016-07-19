@@ -1,7 +1,9 @@
+<div ng-controller="coworkHomeController" ng-init="initiator()">
  <div ng-include="'header.html'" class="hdrOutline container"></div>
         <div style="padding-top:80px">        
         <div ng-include="'partials/signup.html'" class=" signup-section container-fluid" ng-show="atSignUp"></div>
         <div ng-include="'menu.html'" class="container-fluid menu-nav"></div>
         <div ng-include="'footer.html'" class="ftrOutline container" ng-show="atHome"></div>    
     </div>
+</div>
 </div>

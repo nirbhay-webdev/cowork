@@ -150,5 +150,14 @@ app.controller('coworkHeaderController',['$scope','$location','$rootScope','cwrk
     $scope.showSignUpForm=function() {
         $rootScope.atSignUp=!$rootScope.atSignUp;
     }
+     $scope.signUp= function() {
+        
+        console.log('one step before cwrkBackend service being called');
+        $scope.test=cwrkBackend.userAuth($scope.user);
+        $rootScope.atSignUp=false;
+        $location.path('/home');
+        $scope.viewStates.profile=true;
+
+    }
  
 }]);
