@@ -3,8 +3,6 @@ var app=angular.module('cowork',['ngRoute']);
 
 app. config(['$locationProvider', '$routeProvider',
     function config($locationProvider, $routeProvider) {
-      
-
       $routeProvider.
         when('/', {
           templateUrl: 'Views/homepage.html'
@@ -19,12 +17,13 @@ app. config(['$locationProvider', '$routeProvider',
 app.service('cwrkBackend',function(){
 
     this.userAuth = function(user) {
-        firebase.auth().createUserWithEmailAndPassword(user.email, user.password).catch(function(error) {
+        var result=firebase.auth().createUserWithEmailAndPassword(user.email, user.password).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
      });
+     return result;
     }
     });
 

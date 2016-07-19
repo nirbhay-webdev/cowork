@@ -1,20 +1,99 @@
 body {
     -webkit-appearance:none;
+    color:#516D16
+}
+
+input[type="button"] {
+    background:#A97465;
+    outline:none;
+    border:solid 1px #A97465;
+    border-radius:25px;
+    color:white!important;
+    width:100px;
+    height:50px;
+    margin-right:5px;
+    margin-left:5px;
+}
+
+/*Sign Up Section Detailing*/
+
+.signup-section-outer{
+    background:#516D76;
+
+}
+.signup-section {
+    padding-left:0px;
+    
+}
+
+.signup-section img {
+    width:960px;
+}
+
+.signup-table {
+    margin:70px auto;
+}
+
+.signup-section td {
+    height:100px;
+    /*border:1px solid black;*/
+}
+
+.signup-section input {
+    font-family:'Open Sans', sans-serif;
+    background:#516D76; 
+    color:white;
+    width:400px;
+    border:none;
+    border-bottom: 1px solid #A5B6C3;
+    font-size: 28px;
+    transition:border 600;
+    
+}
+
+.signup-section input:focus {
+    outline:none;
+    border-bottom:2px solid #33A3CD;
+     
+
+}
+
+/*Menu Navigation*/
+
+.menu-nav{
+    color:black;  
+    float:center;
+    height:100px;
+    background:white;
+    font-family:'Open Sans', sans-serif;
+    font-size:28px;   
+    color:#607A99;
+    padding-top:36px;
+}
+
+
+.calendar-view-switch-btn{
+    width:40px !important;
+    height:40px !important;
+
 }
 
 .hdrOutline {
     width: 100%;
-    height: 100px;
-    background:#2b2b2b;
+    height: 80px;
+    background:#343C48;
     position:fixed !important;
     overflow:hidden;
-    color:black;
+    color:white;
     z-index:1000;
+    -webkit-box-shadow: 0px 6px 73px -12px rgba(0,0,0,0.74);
+-moz-box-shadow: 0px 6px 73px -12px rgba(0,0,0,0.74);
+box-shadow: 0px 6px 73px -12px rgba(0,0,0,0.74);
 }
 
 .ftrOutline {
     width:100%;
-    height:100px;
+    height:25px;
     position:relative;
     bottom:0px;
     background:#2b2b2b;
@@ -30,19 +109,21 @@ body {
 }
 
 .loginpanel{
-    padding-top:25px;
+    padding-top:15px;
     margin-right:5px;
 }
 
-.loginpanel>input[type="button"] {
-    background:#D6A019;
+/*.loginpanel>input[type="button"] {
+    background:inherit;
     outline:none;
-    border:none;
-    color:black;
+    border:solid 1px #A97465;
+    border-radius:25px;
+    color:white;
     width:100px;
     height:50px;
+    margin-right:10px;
     
-}
+}*/
 
 #userName,#password, {
     border:none;
@@ -51,6 +132,7 @@ body {
     color:black;
     font-size:16px;
     height:50px;
+
 }
 
 .newinput {
@@ -58,7 +140,7 @@ body {
 }
 
 .newinput>input {
-    font-size:24px;
+    font-size:14px;
     width:250px;
     border:none;
     border-bottom:1px solid gray;
@@ -73,29 +155,38 @@ body {
     outline:none;
 }
 
+.create-switch>input[type="button"] {
+    background:#A97465;
+
+}
+
 .sidemenu {
     position:fixed;
-    top:100px;
+    top:80px;
     width:120px;
-    color:black;
-    background:#848484;   
+    color:white;
+    background:#A5B6C3;   
     height:100%;
+ -webkit-box-shadow: -31px -2px 73px -12px rgba(0,0,0,0.74);
+-moz-box-shadow: -31px -2px 73px -12px rgba(0,0,0,0.74);
+box-shadow: -31px -2px 73px -12px rgba(0,0,0,0.74);
 }
 
 .menu{
     position:relative;
-    font-size:18px;
+    font-size:14px;
     
 
 }
 
 .menu-elements
 {
-padding:10px 5px 10px 5px;
+    padding:10px 5px 10px 5px;
+
 }
 
 .menu-elements>input[type="checkbox"] {
-display:none;
+display:none !important;
 }
 
 .calendar-view-switch-btn {
@@ -115,4 +206,8 @@ display:none;
     color:black;
     border-bottom:solid 1px black;
     outline:none;
+}
+
+#profile,#booking,#team,#invoices,#payments {
+    display:none !important;
 }

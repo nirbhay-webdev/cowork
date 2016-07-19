@@ -31,21 +31,22 @@
                     </td>
                 </tr>    
                 <tr>
-                    <td class="loginpanel newinput"><input id="nextstep" type="button" value="Create" ng-click="signUp()"></td>
+                    <td class="create-switch"><input id="nextstep" type="button" value="Create" ng-click="signUp()"></td>
                 </tr>
                 </tbody>    
             </table>    
         </div>
         <div class="col-lg-7" >
             <div class="row">
-                <div class="col-lg-3">     
-                <input class="calendar-view-switch-btn" type="button" value="Day" ng-model="day">
-                <input class="calendar-view-switch-btn" type="button" value="Week">
-                <input class="calendar-view-switch-btn" type="button" value="Month">
+                <div class="col-lg-6">     
+                <input type="button" value="Day">
+                <input type="button" value="Week">
+                <input type="button" value="Month">
                 </div>
-                <div class="col-lg-7"></div>
-                <div class="col-lg-2"><span style="font-size:16px;font-weight:400"><input class="calendar-view-switch-btn" type="button" value="<" ng-click="monthChange(-1)">{{month.value}}<input class="calendar-view-switch-btn" type="button" value=">" ng-click="monthChange(1)"></span></div>
-            </div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3">
+                    <span style="font-size:16px;font-weight:400"><input class="calendar-view-switch-btn" type="button" value="<" ng-click="monthChange(-1)">{{month.value}}<input class="calendar-view-switch-btn" type="button" value=">" ng-click="monthChange(1)"></span></div>
+             </div>
             <div class="row">
                 <div class="col-lg-2" style="height:30px;">Monday</div>
                 <div class="col-lg-2" style="height:30px;">Tuesday</div>
@@ -61,7 +62,7 @@
                 <div class="col-lg-2" style="height:120px;">{{month.date[0][1]}}</div>
                 <div class="col-lg-2" style="height:120px;">{{month.date[0][2]}}</div>
                 <div class="col-lg-2" style="height:120px;">{{month.date[0][3]}}</div>
-                <div class="col-lg-2" style="height:120px;"><h4>{{month.date[0][4]}}</h4></div>
+                <div class="col-lg-2" style="height:120px;">{{month.date[0][4]}}</div>
                 <div class="col-lg-1" style="height:120px;">{{month.date[0][5]}}</div>
                 <div class="col-lg-1" style="height:120px;">{{month.date[0][6]}}</div>
             </div>

@@ -4,6 +4,10 @@
         <meta name="viewport" initial-scale=1>
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <!--Font Open Sans-->
+        <style>
+            @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+            </style>
         <!--Vanilla Css-->
         <link rel="stylesheet" href="cowork.css">
         <!--AngularJS-->
@@ -22,13 +26,9 @@
     <!--
         Body of the document starts 
         -->
-    <body ng-controller="coworkController" ng-init="init()">
-        
-        <div ng-include="'header.html'" class="hdrOutline container" ></div>
-        <div ng-include="'partials/signup.html'" class="signUpForm container-fluid" ng-show="atSignUp"></div>
-        <div ng-view style="min-height:1600px;padding-top:100px;"></div>
-        <div ng-include="'footer.html'" class="ftrOutline container" ng-show="atHome"></div>    
-        
+    <!--<body ng-controller="coworkController" ng-init="init()">-->
+    <body ng-view>    
+       
     </body>
 
 <html>
