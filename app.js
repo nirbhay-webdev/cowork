@@ -147,7 +147,7 @@ app.controller('coworkHeaderController',['$scope','$location','$rootScope','cwrk
                             }
     };
 
-    $scope.showSignUpForn=function() {
+    $scope.showSignUpForm=function() {
         $rootScope.atSignUp=!$rootScope.atSignUp;
     }
  
